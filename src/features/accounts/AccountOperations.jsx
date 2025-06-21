@@ -11,6 +11,7 @@ function AccountOperations() {
     
     const dispatch = useDispatch();
     const account = useSelector(store => store.account)
+    // console.log(account)
 
     // destructuring necessary variable out of the account
     const {loan: currentLoan, loanPurpose: currentLoanPurpose, isLoading} = account
