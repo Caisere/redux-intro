@@ -14,7 +14,7 @@ function Customer() {
     }
 
     return (
-        <div>
+        <div className="flex flex-col">
             <h2>Create new customer</h2>
             <div className="inputs">
                 <div>
