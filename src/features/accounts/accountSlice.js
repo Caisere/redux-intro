@@ -85,6 +85,10 @@ export function deposit(amount, currency) {
 export default accountSlice.reducer
 
 
+
+export const getUserAccount = (store) => store.account
+
+export const getUserBalance = (store) => store.account.balance;
 // the accountReducer function
 // export default function accountReducer(state = accountInitialValues, action) {
 //     switch (action.type) {

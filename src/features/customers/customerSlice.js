@@ -31,13 +31,19 @@ const customerSlice = createSlice({
         },
         customerDetailUpdate(state, action) {
             state.fullName = action.payload
+        },
+        logoutUser(state) {
+            state.fullName = ''
         }
     }
 })
 
-export const {customerCreation, customerDetailUpdate} = customerSlice.actions
+export const {customerCreation, customerDetailUpdate, logoutUser} = customerSlice.actions
 
 export default customerSlice.reducer
+
+
+export const getUserAccountName = (store) => store.customer.fullName
 
 
 // // the customerReducer function 
